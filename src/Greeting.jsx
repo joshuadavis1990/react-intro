@@ -1,8 +1,9 @@
-function Greeting() {
+function Greeting({ name, age }) {
+    console.log(name)
     return <>
-        <p>FR: Bonjour!</p>
-        <p>ES: Hola!</p>
+        <p>FR: Bonjour{name ? `, ${name}` : ""}!</p>
+        <p>ES: Hola, {age}!</p>
       </>
-  }
+}
 
   export default Greeting
